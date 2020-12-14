@@ -2,7 +2,7 @@ from api.serializers import ClientSerializer, ProductSerializer
 from rest_framework import viewsets
 from api.models import Client, Product
 from rest_framework.authentication import BasicAuthentication
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 class ClientViewSet(viewsets.ModelViewSet):
     serializer_class = ClientSerializer
@@ -15,4 +15,4 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
     authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticatedOrReadOnly]
