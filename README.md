@@ -1,8 +1,9 @@
 ## Django API REST
 
-Desafio de um API REST de Produtos Favoritos, no qual é possível criar clientes e produtos, sendo que cada cliente pode adicionar produtos a sua lista de produtos favoritos.
+Desafio de um API REST de Produtos Favoritos, no qual é possível criar clientes e produtos, sendo que cada cliente pode adicionar produtos a sua lista de produtos favoritos sem repetilos.
 
 -Banco de dados: Postgresql
+-Pode utilizar o Postman Também
 
 ## Processo de Instalação 
 
@@ -38,7 +39,7 @@ http://127.0.0.1:8000/
 
 ## Como utilizar a API
 
-Post /client
+Post /client     #Endpoint lista os clientes e também cria cada cliente.
 
 {
 
@@ -60,9 +61,7 @@ Post /client
         }
 }
 
-endpoint lista os clientes e também cria cada cliente
-
----Get /clients?page=2
+---Get /clients?page=2     #Endpoint mostra as páginas e os clientes.
 
 {
 
@@ -86,9 +85,7 @@ endpoint lista os clientes e também cria cada cliente
     ]
 }
 
-endpoint mostra as paginas e os clientes
-
----Puth - Path /client/2
+---Puth - Path /client/2      #Endpoint atualiza o Cliente.
 
 {
 
@@ -99,9 +96,8 @@ endpoint mostra as paginas e os clientes
     
 }
 
-endpoint atualiza o Cliente
+---Delete /client/2     #Endpoint exclui cliente
 
----Delete /client/2
 
   { 
   
@@ -109,9 +105,7 @@ endpoint atualiza o Cliente
     
     }
 
-endpoint exclui cliente
-
----Get /client/1
+---Get /client/1         #O endpoint informar o cliente e se tiver algum ou alguns favorite_product (sem repetição de produtos), ira retornar as informações no                                 favorite, senão o campo fica vazio. 
 
     {
     "id": 1,
@@ -119,9 +113,6 @@ endpoint exclui cliente
     "email": "Patricia@exemplo.com",
     "favorite": []
  }
- 
--------
-
 {
 
     "id": 1,    
@@ -148,4 +139,3 @@ endpoint exclui cliente
     ]
 }
 
-O endpoint informar o cliente e se tiver algum ou alguns favorite_product (sem repetição de produtos), ira retornar as informções no favorite, senão o campo fica vazio.
