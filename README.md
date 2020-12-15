@@ -22,6 +22,8 @@ Desafio de um API REST de Produtos Favoritos, no qual é possível criar cliente
 
 9-Rodar a aplicação: python manage.py runserver
 
+** Se der erro : python -m pip install --upgrade pip
+
 
 ## Processo Inicial 
 
