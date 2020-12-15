@@ -9,11 +9,17 @@ Desafio de um API REST de Produtos Favoritos, no qual é possível criar cliente
 ## Processo de Instalação 
 
 1-Clonar o repositório
+
 2-Ativar o venv (VsCode): venv/Scripts/activate.ps1 
+
 4-Instalar os módulos: pip install -r requirements.txt
+
 5-Migrações Models: python manage.py makemigrations
+
 6-Migrações: python manage.py migrate
+
 7-Cria um super usuário: python manage.py createsuperuser
+
 9-Rodar a aplicação: python manage.py runserver
 
 
