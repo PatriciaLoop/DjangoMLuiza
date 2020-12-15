@@ -37,8 +37,10 @@ http://127.0.0.1:8000/
 
 
 ## Como utilizar a API
+//
+```
+Post /client
 
----Post /client
 {
     "count": 5,
     "next": null,
@@ -56,9 +58,10 @@ http://127.0.0.1:8000/
             "email": "manuela@exemplo.com",
             "favorite": []
         }
-    ]
 }
+````
 endpoint lista os clientes e também cria cada cliente
+//
 
 ---Get /clients?page=2
 {
