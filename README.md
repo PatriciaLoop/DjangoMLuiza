@@ -1,6 +1,6 @@
 ## PYTHON AND DJANGO API REST
 
-Desafio de um API REST de Produtos Favoritos, no qual é possível criar clientes e produtos, sendo que cada cliente pode adicionar produtos a sua lista de produtos favoritos sem repetilos.
+Desafio de um API REST de Produtos Favoritos, no qual é possível criar clientes e produtos, sendo que cada cliente pode adicionar produtos a sua lista de produtos favoritos sem repeti-los
 
 -Banco de dados: Postgresql
 
