@@ -37,8 +37,7 @@ http://127.0.0.1:8000/
 
 
 ## Como utilizar a API
-//
-```
+
 Post /client
 
 {
@@ -59,9 +58,8 @@ Post /client
             "favorite": []
         }
 }
-````
+
 endpoint lista os clientes e também cria cada cliente
-//
 
 ---Get /clients?page=2
 {
@@ -105,7 +103,7 @@ endpoint exclui cliente
 
 ---Get /client/1
 
- [{
+   {
     "id": 1,
     "name": "Patricia",
     "email": "Patricia@exemplo.com",
@@ -134,7 +132,6 @@ endpoint exclui cliente
             "reviewScore": "9.6"
         }
     
-}]
+}
 
 O endpoint informar o cliente e se tiver algum ou alguns favorite_product (sem repetição de produtos), ira retornar as informções no favorite, senão o campo fica vazio.
----
