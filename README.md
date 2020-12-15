@@ -3,6 +3,7 @@
 Desafio de um API REST de Produtos Favoritos, no qual é possível criar clientes e produtos, sendo que cada cliente pode adicionar produtos a sua lista de produtos favoritos sem repetilos.
 
 -Banco de dados: Postgresql
+
 -Pode utilizar o Postman Também
 
 ## Processo de Instalação 
@@ -39,7 +40,8 @@ http://127.0.0.1:8000/
 
 ## Como utilizar a API
 
-Post /client     #Endpoint lista os clientes e também cria cada cliente.
+#Endpoint lista os clientes e também cria cada cliente.
+Post /client     
 
 {
 
@@ -61,7 +63,8 @@ Post /client     #Endpoint lista os clientes e também cria cada cliente.
         }
 }
 
----Get /clients?page=2     #Endpoint mostra as páginas e os clientes.
+#Endpoint mostra as páginas e os clientes.
+---Get /clients?page=2     
 
 {
 
@@ -85,7 +88,8 @@ Post /client     #Endpoint lista os clientes e também cria cada cliente.
     ]
 }
 
----Puth - Path /client/2      #Endpoint atualiza o Cliente.
+#Endpoint atualiza o Cliente.
+---Puth - Path /client/2 
 
 {
 
@@ -96,7 +100,8 @@ Post /client     #Endpoint lista os clientes e também cria cada cliente.
     
 }
 
----Delete /client/2     #Endpoint exclui cliente
+ #Endpoint exclui cliente
+---Delete /client/2    
 
 
   { 
@@ -105,7 +110,8 @@ Post /client     #Endpoint lista os clientes e também cria cada cliente.
     
     }
 
----Get /client/1         #O endpoint informar o cliente e se tiver algum ou alguns favorite_product (sem repetição de produtos), ira retornar as informações no                                 favorite, senão o campo fica vazio. 
+#O endpoint informar o cliente e se tiver algum ou alguns favorite_product (sem repetição de produtos), ira retornar as informações no                                 favorite, senão o campo fica vazio. 
+---Get /client/1         
 
     {
     "id": 1,
