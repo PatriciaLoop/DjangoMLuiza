@@ -41,6 +41,7 @@ http://127.0.0.1:8000/
 Post /client
 
 {
+
     "count": 5,
     "next": null,
     "previous": "http://127.0.0.1:8000/clients",
@@ -62,7 +63,9 @@ Post /client
 endpoint lista os clientes e também cria cada cliente
 
 ---Get /clients?page=2
+
 {
+
     "count": 5,
     "next": null,
     "previous": "http://127.0.0.1:8000/clients",
@@ -78,43 +81,54 @@ endpoint lista os clientes e também cria cada cliente
             "name": "lopes",
             "email": "lopes@exemlo.com",
             "favorite": []
+            
         }
     ]
 }
+
 endpoint mostra as paginas e os clientes
 
 ---Puth - Path /client/2
 
 {
+
     "id": 2,
     "name": "Regina",
     "email": "regina@exemplo.com",
     "favorite": []
+    
 }
+
 endpoint atualiza o Cliente
 
 ---Delete /client/2
 
-{
+  { 
+  
     "detail": "Not found."
-}
+    
+    }
 
 endpoint exclui cliente
 
 ---Get /client/1
 
-   {
+    {
     "id": 1,
     "name": "Patricia",
     "email": "Patricia@exemplo.com",
     "favorite": []
-}
+ }
+ 
 -------
+
 {
-    "id": 1,
-    "name": "Patricia",
-    "email": "Patricia@exemplo.com",
+
+    "id": 1,    
+    "name": "Patricia",    
+    "email": "Patricia@exemplo.com",    
     "favorite": [
+    
         {
             "id": 1,
             "title": "Nescau",
