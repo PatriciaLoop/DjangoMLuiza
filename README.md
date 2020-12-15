@@ -33,9 +33,6 @@ Através do login e password do superuser, pode ser visualizado os clientes.
 
 Os Produtos podem ser vistos pelos clientes, porém não podem ser alterados.
 
-  login: <admin-name>,
-  
-  password: <password>
 
 #### Rodar API
 
