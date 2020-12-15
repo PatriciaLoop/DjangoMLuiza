@@ -29,13 +29,13 @@ Desafio de um API REST de Produtos Favoritos, no qual é possível criar cliente
 
 ---Get /AUTHENTICATION
 
-através do login e password do superuser, pode ser visualizado os clientes.
+Através do login e password do superuser, pode ser visualizado os clientes.
 
 Os Produtos podem ser vistos pelos clientes, porém não podem ser alterados.
 
-  "admin_name": <admin-name>,
+  login: <admin-name>,
   
-  "password": <password>
+  password: <password>
 
 #### Rodar API
 
