@@ -109,7 +109,7 @@ endpoint exclui cliente
     "email": "Patricia@exemplo.com",
     "favorite": []
 }
-
+-------
 {
     "id": 1,
     "name": "Patricia",
@@ -131,7 +131,7 @@ endpoint exclui cliente
             "brand": "Garoto",
             "reviewScore": "9.6"
         }
-    
+    ]
 }
 
 O endpoint informar o cliente e se tiver algum ou alguns favorite_product (sem repetição de produtos), ira retornar as informções no favorite, senão o campo fica vazio.
