@@ -14,9 +14,10 @@ Desafio de um API REST de Produtos Favoritos, no qual é possível criar cliente
 7-Cria um super usuário: python manage.py createsuperuser
 9-Rodar a aplicação: python manage.py runserver
 
+
 ## Processo Inicial 
 
-Get /AUTHENTICATION
+---Get /AUTHENTICATION
 
 através do login e password do superuser, pode ser visualizado os clientes.
 Os Produtos podem ser vistos pelos clientes, porém não podem ser alterados.
@@ -37,7 +38,7 @@ http://127.0.0.1:8000/
 
 ## Como utilizar a API
 
-Post /client
+---Post /client
 {
     "count": 5,
     "next": null,
@@ -59,7 +60,7 @@ Post /client
 }
 endpoint lista os clientes e também cria cada cliente
 
-Get /client//clients?page=2
+---Get /clients?page=2
 {
     "count": 5,
     "next": null,
@@ -81,7 +82,7 @@ Get /client//clients?page=2
 }
 endpoint mostra as paginas e os clientes
 
-Puth - Path /client/2
+---Puth - Path /client/2
 
 {
     "id": 2,
@@ -91,14 +92,14 @@ Puth - Path /client/2
 }
 endpoint atualiza o Cliente
 
-Delete /client/2
+---Delete /client/2
 
 {
     "detail": "Not found."
 }
 endpoint exclui cliente
--------------------------
-Get /client/1
+
+---Get /client/1
 
     {
     "id": 1,
