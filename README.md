@@ -97,11 +97,12 @@ endpoint atualiza o Cliente
 {
     "detail": "Not found."
 }
+
 endpoint exclui cliente
 
 ---Get /client/1
 
-    {
+ {
     "id": 1,
     "name": "Patricia",
     "email": "Patricia@exemplo.com",
